@@ -1,91 +1,267 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>PHSP installer slideshow</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/styles.css">
-<style>
-html {
-		background-color: #fff;
-}
-* {box-sizing: border-box;}
-body {
-	margin:0px;}
-.mySlides {opacity: 0; position: absolute; transition: all 1s;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 445px;
-  position: relative;
-  margin: auto;
-  cursor: pointer;
-}
-
-/* Caption text */
-.text {
-  font-family: 'AdobeClean', Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-weight: 450;
-  font-size: 15px;
-  letter-spacing: .3;
-  padding-left: 20px;
-  position: absolute;
-  bottom: 95px;
-  width: 30%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-	font-family: 'AdobeClean', Helvetica, Arial, sans-serif;
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1s;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .7}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .1}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-</head>
-<body>
-<div class="slideshow-container" id="slideContainer" href="#">
-
-<div class="mySlides fade" style="opacity: 1; visibility: visible;">
-    <video class="videos" autoplay loop muted style="width: 445px; height: 239px;"><source src="images/01_creativity_for_all_445x239.mp4" style="width: 445px; height: 239px;"></video>
-    <div class="text" id="slideText1">Creativity for all.</div>
-</div>
-
-</div>
-
-<script type="text/javascript" src="lib/jquery.min.js"></script>
-<script type="text/javascript" src="carousel.js"></script>
-</body>
-</html>
+<!doctype html> <html data-n-head-ssr lang="en" class="kmb-site-html" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D,%22class%22:%7B%22ssr%22:%22kmb-site-html%22%7D%7D"> <head> <title>Home</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content="Site description"><link data-n-head="ssr" rel="canonical" href="https://hank9934.hocoos.com"><link data-n-head="ssr" rel="icon" type="image/svg+xml" href="https://img1.hocoos.com/static/img/default-favicons/favicon-v1.svg"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"><link rel="stylesheet" href="/nuxt/css/7d96125b4e89e56924ac.css"> <script src="https://apis.google.com/js/platform.js" async defer></script> </head> <body class="kmb-site-body kmb-template-default kmb-site-default-language-en-us kmb-site-page-animation kmb-general-template-default" data-n-head="%7B%22class%22:%7B%22ssr%22:%5B%22kmb-site-body%22,%22kmb-template-default%22,%22kmb-site-default-language-en-us%22,%22kmb-site-page-animation%22,%22kmb-general-template-default%22%5D%7D%7D"> <div data-server-rendered="true" id="nuxt"><!----><div id="_layout"><div id="kmb-site-layout" data-fetch-key="WebsiteLayout:0" class="kmb-site kmb-site-wrapper kmb-site-image-filter-name-normal kmb-site-image-filter-id-1"><style type="text/css">:root{
+    --bodyBg: #121212;
+    --bodyColor: #2153E4;
+    --bodyFontFamily: 'Lato', sans-serif;
+    --bodyFontSize: 16px;
+    --bodyFontWeight: 300;
+    --bodyFontStyle: normal;
+    --bodyLineHeight: 1.2;
+    --bodyTextTransform: inherit;
+    --bodyTextLetterSpacing: inherit;
+    --primaryFont: 'Playfair Display', serif;
+    --secondaryFont: 'Lato', sans-serif;
+    --pageContainer: 1150px;
+    --primaryColor: #FFFFFF;
+    --secondaryColor: #5DAFFD;
+    --accentColor: #2272FF;
+    --mutedColor: #2153E4;
+    --fifthColor: #000000;
+    --sixthColor: #000000;
+    --seventhColor: #121212;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --transparentColor: transparent;
+    --primaryBorder: 1px solid #FFFFFF;
+    --secondaryBorder: 1px solid #5DAFFD;
+    --accentBorder: 1px solid #2272FF;
+    --borderRadius: 0;
+    --headerBg: #2153E4;
+    --headerColor: #FFFFFF;
+    --headerHoverColor: #000000;
+    --headerActiveColor: #000000;
+    --headerFontFamily: 'Lato', sans-serif;
+    --headerFontSize: 16px;
+    --headerFontWeight: 400;
+    --headerFontStyle: normal;
+    --headerLineHeight: 1.2;
+    --headerTextTransform: inherit;
+    --headerStickyBg: #2153E4;
+    --headerStickyOpacityPercentage: 0;
+    --headerStickyBlur: 0;
+    --footerBg: #000000;
+    --footerColor: #2153E4;
+    --footerFontFamily: 'Lato', sans-serif;
+    --footerFontSize: 16px;
+    --footerFontWeight: 400;
+    --footerFontStyle: normal;
+    --footerLineHeight: 1.2;
+    --footerTextTransform: inherit;
+    --headlineH1Color: #5DAFFD;
+    --headlineH1FontFamily: 'Playfair Display', serif;
+    --headlineH1FontSize: 58px;
+    --headlineH1FontWeight: 400;
+    --headlineH1FontStyle: italic;
+    --headlineH1LineHeight: 1.2;
+    --headlineH1TextTransform: inherit;
+    --headlineH1TextDecoration: inherit;
+    --headlineH1LineVisible: block;
+    --headlineH1LineBg: #FFFFFF;
+    --headlineH2Color: #5DAFFD;
+    --headlineH2FontFamily: 'Playfair Display', serif;
+    --headlineH2FontSize: 40px;
+    --headlineH2FontWeight: 400;
+    --headlineH2FontStyle: italic;
+    --headlineH2LineHeight: 1.2;
+    --headlineH2TextTransform: inherit;
+    --headlineH2TextDecoration: inherit;
+    --subTitleH3Color: #2272FF;
+    --subTitleH3FontFamily: 'Lato', sans-serif;
+    --subTitleH3FontSize: 24px;
+    --subTitleH3FontWeight: 400;
+    --subTitleH3FontStyle: normal;
+    --subTitleH3LineHeight: 1.2;
+    --subTitleH3TextTransform: inherit;
+    --subTitleH3TextDecoration: inherit;
+    --subTitleH4Color: #2153E4;
+    --subTitleH4FontFamily: 'Lato', sans-serif;
+    --subTitleH4FontSize: 24px;
+    --subTitleH4FontWeight: 600;
+    --subTitleH4FontStyle: normal;
+    --subTitleH4LineHeight: 1.2;
+    --subTitleH4TextTransform: inherit;
+    --subTitleH4TextDecoration: inherit;
+    --bodyText1Color: #FFFFFF;
+    --bodyText1FontFamily: 'Lato', sans-serif;
+    --bodyText1FontSize: 18px;
+    --bodyText1FontWeight: 300;
+    --bodyText1FontStyle: normal;
+    --bodyText1LineHeight: 1.6;
+    --bodyText1TextTransform: inherit;
+    --bodyText1TextDecoration: inherit;
+    --bodyText2Color: #FFFFFF;
+    --bodyText2FontFamily: 'Lato', sans-serif;
+    --bodyText2FontSize: 18px;
+    --bodyText2FontWeight: 300;
+    --bodyText2FontStyle: normal;
+    --bodyText2LineHeight: 1.6;
+    --bodyText2TextTransform: inherit;
+    --bodyText2TextDecoration: inherit;
+    --bodyText3Color: #FFFFFF;
+    --bodyText3FontFamily: 'Lato', sans-serif;
+    --bodyText3FontSize: 16px;
+    --bodyText3FontWeight: 300;
+    --bodyText3FontStyle: normal;
+    --bodyText3LineHeight: 1.6;
+    --bodyText3TextTransform: inherit;
+    --bodyText3TextDecoration: inherit;
+    --overline1Color: #FFFFFF;
+    --overline1FontFamily: 'Lato', sans-serif;
+    --overline1FontSize: 16px;
+    --overline1FontWeight: 600;
+    --overline1FontStyle: normal;
+    --overline1LineHeight: 1.2;
+    --overline1TextTransform: inherit;
+    --overline1TextDecoration: inherit;
+    --overline2Color: #000000;
+    --overline2FontFamily: 'Lato', sans-serif;
+    --overline2FontSize: 14px;
+    --overline2FontWeight: 600;
+    --overline2FontStyle: normal;
+    --overline2LineHeight: 1.2;
+    --overline2TextTransform: inherit;
+    --overline2TextDecoration: inherit;
+    --caption1Color: #FFFFFF;
+    --caption1FontFamily: 'Lato', sans-serif;
+    --caption1FontSize: 18px;
+    --caption1FontWeight: 400;
+    --caption1FontStyle: normal;
+    --caption1LineHeight: 1.2;
+    --caption1TextTransform: inherit;
+    --caption1TextDecoration: inherit;
+    --caption2Color: #FFFFFF;
+    --caption2FontFamily: 'Lato', sans-serif;
+    --caption2FontSize: 18px;
+    --caption2FontWeight: 400;
+    --caption2FontStyle: normal;
+    --caption2LineHeight: 1.2;
+    --caption2TextTransform: inherit;
+    --caption2TextDecoration: line-through;
+    --caption3Color: #FFFFFF;
+    --caption3FontFamily: 'Lato', sans-serif;
+    --caption3FontSize: 12px;
+    --caption3FontWeight: 400;
+    --caption3FontStyle: normal;
+    --caption3LineHeight: 1.2;
+    --caption3TextTransform: inherit;
+    --caption3TextDecoration: inherit;
+    --fieldLabelColor: #2272FF;
+    --fieldLabelFontFamily: 'Lato', sans-serif;
+    --fieldLabelFontSize: 16px;
+    --fieldLabelFontWeight: 400;
+    --fieldLabelFontStyle: normal;
+    --fieldLabelLineHeight: 1.2;
+    --fieldLabelTextTransform: inherit;
+    --fieldLabelTextDecoration: inherit;
+    --inputFieldColor: #2272FF;
+    --inputFieldBg: #FFFFFF;
+    --inputFieldBorderColor: #2272FF;
+    --inputFieldFocusBorderColor: #000000;
+    --inputFieldFontFamily: 'Lato', sans-serif;
+    --inputFieldFontSize: 16px;
+    --inputFieldFontWeight: 400;
+    --inputFieldFontStyle: normal;
+    --inputFieldLineHeight: 1.2;
+    --inputFieldTextTransform: inherit;
+    --inputFieldTextDecoration: inherit;
+    --btnFontFamily: 'Lato', sans-serif;
+    --btnFontSize: 16px;
+    --btnFontWeight: 600;
+    --btnFontStyle: normal;
+    --btnTextTransform: uppercase;
+    --btnTextDecoration: inherit;
+    --btnBg: #5DAFFD;
+    --btnHoverBg: transparent;
+    --btnColor: #000000;
+    --btnHoverColor: #5DAFFD;
+    --btnBorderColor: #5DAFFD;
+    --btnHoverBorderColor: #5DAFFD;
+    --btnBorderRadius: 0px;
+    --btnBorderWidth: 1px;
+    --btnBorderStyle: solid;
+    --btnPrimaryBg: #2153E4;
+    --btnPrimaryHoverBg: #FFFFFF;
+    --btnPrimaryColor: #000000;
+    --btnPrimaryHoverColor: #2153E4;
+    --btnPrimaryBorderColor: #2153E4;
+    --btnPrimaryHoverBorderColor: #FFFFFF;
+    --btnPrimaryDisabledBg: #5DAFFD;
+    --btnPrimaryDisabledColor: #000000;
+    --btnSecondaryBg: transparent;
+    --btnSecondaryHoverBg: #5DAFFD;
+    --btnSecondaryColor: #5DAFFD;
+    --btnSecondaryHoverColor: #000000;
+    --btnSecondaryBorderColor: #5DAFFD;
+    --btnSecondaryHoverBorderColor: #5DAFFD;
+    --btnLinkColor: #5DAFFD;
+    --btnLinkHoverColor: #2153E4;
+    --btnLinkTextDecoration: underline;
+    --btnLinkLabelIcon: &quot;e91f&quot;;
+    --imageBorderRadius: 0px;
+    --gridItemBorderRadius: 0px;
+    --accordionBg: #000000;
+    --accordionColor: #FFFFFF;
+    --accordionBorderColor: #2272FF;
+    --accordionHeadBg: #000000;
+    --accordionHeadColor: #5DAFFD;
+    --miniBannerBg: #000000;
+    --miniBannerBorderColor: #2272FF;
+    --cardsBg: #000000;
+    --cardsBorderColor: #2272FF;
+    --tabBg: #FFFFFF;
+    --tabColor: #000000;
+    --tabHoverBg: #FFFFFF;
+    --tabHoverColor: #2272FF;
+    --tabActiveBg: #2153E4;
+    --tabActiveColor: #000000;
+    --tabFontFamily: 'Lato', sans-serif;
+    --tabFontSize: 16px;
+    --tabFontWeight: 400;
+    --tabActiveFontWeight: 400;
+    --tabFontStyle: normal;
+    --tabTextTransform: inherit;
+    --tabTextDecoration: inherit;
+    --overlayBg: rgba(0,0,0, 0.5);
+    --overlayColor: #5DAFFD;
+    --imageBackdropFilter: 1px;
+    --sliderLeftNavIcon: url('https://img2.hocoos.com/cache/img-pack/668/w-367/h-367/x-0/y-0/img-pack/668/left-61-01.png');
+    --sliderRightNavIcon: url('https://img2.hocoos.com/cache/img-pack/668/w-367/h-367/x-0/y-0/img-pack/668/right-61-01.png');
+    --sliderBottomLeftNavIcon: url('https://img2.hocoos.com/cache/img-pack/668/w-367/h-367/x-0/y-0/img-pack/668/left-27-01.png');
+    --sliderBottomRightNavIcon: url('https://img2.hocoos.com/cache/img-pack/668/w-367/h-367/x-0/y-0/img-pack/668/right-27-01.png');
+    --widgetTintBackgroundColor: #313131;
+    --storeBodyBg: #FFFFFF;
+    --storeBodyColor: #000000;
+    --storeBtnPrimaryBg: #2153E4;
+    --storeBtnPrimaryHoverBg: #000000;
+    --storeBtnPrimaryColor: #FFFFFF;
+    --storeBtnPrimaryHoverColor: #FFFFFF;
+    --storeBtnPrimaryBorderColor: #2153E4;
+    --storeBtnPrimaryHoverBorderColor: #2153E4;
+    --storeBtnPrimaryDisabledBg: #5DAFFD;
+    --storeBtnPrimaryDisabledColor: #000000;
+    --storeBtnSecondaryBg: transparent;
+    --storeBtnSecondaryHoverBg: #2153E4;
+    --storeBtnSecondaryColor: #000000;
+    --storeBtnSecondaryHoverColor: #FFFFFF;
+    --storeBtnSecondaryBorderColor: #000000;
+    --storeBtnSecondaryHoverBorderColor: #FFFFFF;
+    --storeBtnSecondaryDisabledBg: #5DAFFD;
+    --storeBtnSecondaryDisabledColor: #000000;
+    --blogBodyBg: #FFFFFF;
+    --blogBodyColor: #000000;
+    --blogBtnPrimaryBg: #000000;
+    --blogBtnPrimaryHoverBg: #000000;
+    --blogBtnPrimaryColor: #FFFFFF;
+    --blogBtnPrimaryHoverColor: #FFFFFF;
+    --blogBtnPrimaryBorderColor: #000000;
+    --blogBtnPrimaryHoverBorderColor: #000000;
+    --blogBtnPrimaryDisabledBg: #5DAFFD;
+    --blogBtnPrimaryDisabledColor: #2153E4;
+    --blogBtnSecondaryBg: #FFFFFF;
+    --blogBtnSecondaryHoverBg: #FFFFFF;
+    --blogBtnSecondaryColor: #000000;
+    --blogBtnSecondaryHoverColor: #000000;
+    --blogBtnSecondaryBorderColor: #000000;
+    --blogBtnSecondaryHoverBorderColor: #000000;
+    --blogBtnSecondaryDisabledBg: #FFFFFF;
+    --blogBtnSecondaryDisabledColor: #2153E4;
+    }</style><header id="kmb-header" class="kmb-site-header kmb-horizontal-header-menu kmb-horizontal-header-align-left-menu kmb-horizontal-left-header-menu"><div class="kmb-site-header-container kmb-widget-container"><div class="kmb-header-row kmb-header-text"><div class="kmb-site-logo"><a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active kmb-logo-link kmb-logo-type-2 kmb-header-logo-link"><span class="kmb-site-logo-txt kmb-site-default-text">Logo</span></a></div><div class="kmb-header-menu kmb-horizontal-menu kmb-header-text kmb-site-default-dir flex flex-1 kmb-header-align-left-menu justify-start kmb-dropdown-menu"><button type="button" aria-label="toggle" class="kmb-navbar-toggles"><span class="kmb-nav-icons"></span></button><div class="kmb-horizontal-menu-navbar-collapse"><div class="kmb-horizontal-navbar-collapse-menu flex"><ul class="kmb-main-menu"><li class="kmb-menu-item kmb-menu-item-key-2201745109551477200 kmb-menu-item-level-0 kmb-menu-item-type-page kmb-menu-page-id-1311224"><a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active kmb-menu-item-link kmb-menu-item-link-active">Home</a></li><li class="kmb-menu-item kmb-menu-item-key-5457789228787929000 kmb-menu-item-level-0 kmb-menu-item-type-page kmb-menu-page-id-1311225"><a href="/about-us?id=1311225" class="kmb-menu-item-link">About Us</a></li><li class="kmb-menu-item kmb-menu-item-key-1241527660900336000 kmb-menu-item-level-0 kmb-menu-item-type-page kmb-menu-page-id-1311226"><a href="/contact-us?id=1311226" class="kmb-menu-item-link">Contact Us</a></li><li class="kmb-menu-item kmb-menu-item-key-6242535976578714000 kmb-menu-item-level-0 kmb-menu-item-type-page kmb-menu-page-id-1311227"><a href="/booking?id=1311227" class="kmb-menu-item-link">Booking</a></li><li class="kmb-menu-item kmb-menu-item-key-8230497807404685000 kmb-menu-item-level-0 kmb-menu-item-type-page kmb-menu-page-id-1311228"><a href="/menu?id=1311228" class="kmb-menu-item-link">Menu</a></li><li class="kmb-menu-item kmb-menu-item-key-14070898356561 kmb-menu-item-level-0 kmb-menu-item-type-page kmb-menu-page-id-89579"><a href="/blog" class="kmb-menu-item-link">Blog</a></li><li class="kmb-menu-item-mobile-extras hidden"><div class="kmb-header-menu-extras"><ul class="kmb-menu-extras"><li class="kmb-extras-item kmb-extras-button-item"><a href="#" class="kmb-widget-btn kmb-widget-primary-btn kmb-header-extras-btn kmb-header-extras-contacts-btn"><span class="kmb-widget-btn-label">Contact us</span></a></li></ul></div></li></ul></div></div></div><div class="kmb-header-menu-extras"><ul class="kmb-menu-extras"><li class="kmb-extras-item kmb-extras-button-item"><a href="#" class="kmb-widget-btn kmb-widget-primary-btn kmb-header-extras-btn kmb-header-extras-contacts-btn"><span class="kmb-widget-btn-label">Contact us</span></a></li></ul></div></div></div></header><div class="kmb-site-page"><div data-page-template-type="1" class="kmb-site-page-content kmb-site-page-id-1311224 kmb-site-page-type-id-1 kmb-site-page-type-home kmb-nuxt-content"><div id="SliderSettingsT4V1_6747442716491" data-widget-key="6747442716491" class="kmb-page-widget slider slider-t4 slider-t4-v1" style="padding-top:0px;padding-bottom:0px;"><div class="kmb-widget-container-fluid"><div class="kmb-widget-content-info kmb-widget-slider-content py-10"><div class="kmb-widget-content"><div tabindex="0" class="kmb-site-slider kmb-slider has-indicators kmb-slider-inside-navigation kmb-widget-slider-inside-space-row kmb-slider-inside-navigation-opacity-circle self-stretch"><div class="kmb-slider-stage-outer kmb-site-slider-stage-outer"><div class="kmb-slider-stage kmb-site-slider-stage" style="transform:translate(0px, 0);"><div class="kmb-site-slider-item kmb-slider-item is-active" style="width:100%;"><div class="kmb-widget-bg-image-item kmb-full-bg-item kmb-widget-item-content kmb-widget-hidden-bg-image kmb-widget-bg-image-with-overlay w-full"><div class="kmb-widget-bg-image-content"><div data-height="750" class="kmb-widget-bg-image" style="background-image:url(/ipx/f_webp,q_90/https://img2.hocoos.com/cache/img-pack/668/w-1900/h-750/ww-1900/wh-750/img-pack/668/pexels-rachel-claire-4577692.jpg);min-height:750px;"><div class="kmb-widget-overlay"><div class="kmb-widget-overlay-content flex m-auto py-32 items-center items-center"><div class="kmb-cards-background-v2 kmb-lg-widget-container kmb-widget-lg-divider"><div class="w-full kmb-slide-content kmb-text-center z-10 lg-p-32 md-p-16 p-4 kmb-widget-info-left"><div class="kmb-widget-default-info"><div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="kmb-widget-aligment-wrap kmb-widget-titles-info"><h1 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-title-align-default kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider kmb-slider-title"><p class=\"kmb-rich-text-paragraph text-selected \">Taste the difference</p></h1><div data-max-chars="1200" class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-slider-description">Indulge in the finest and freshest seafood experience. Our delightful selections are sure to leave you craving more! Every dish is carefully crafted with passion and precision, providing a flavor that will tantalize your taste buds. Come enjoy our exceptional flavors today - Taste the Difference!</div><div class="kmb-widget-btn-group kmb-widget-btn-group-center flex justify-center"><!----><!----></div></div></div></div></div></div></div></div></div></div></div><div aria-hidden="true" class="kmb-site-slider-item kmb-slider-item is-next" style="width:100%;"><div class="kmb-widget-bg-image-item kmb-full-bg-item kmb-widget-item-content kmb-widget-hidden-bg-image kmb-widget-bg-image-with-overlay w-full"><div class="kmb-widget-bg-image-content"><div data-height="750" class="kmb-widget-bg-image" style="background-image:url(/ipx/f_webp,q_90/https://img2.hocoos.com/cache/img-pack/668/w-1900/h-750/ww-1900/wh-750/img-pack/668/pexels-rachel-claire-8112976.jpg);min-height:750px;"><div class="kmb-widget-overlay"><div class="kmb-widget-overlay-content flex m-auto py-32 items-center items-center"><div class="kmb-cards-background-v2 kmb-lg-widget-container kmb-widget-lg-divider"><div class="w-full kmb-slide-content kmb-text-center z-10 lg-p-32 md-p-16 p-4 kmb-widget-info-left"><div class="kmb-widget-default-info"><div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="kmb-widget-aligment-wrap kmb-widget-titles-info"><h1 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-title-align-default kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider kmb-slider-title"><p class=\"kmb-rich-text-paragraph text-selected \">Taste the difference</p></h1><div data-max-chars="1200" class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-slider-description">Indulge in the finest and freshest seafood experience. Our delightful selections are sure to leave you craving more! Every dish is carefully crafted with passion and precision, providing a flavor that will tantalize your taste buds. Come enjoy our exceptional flavors today - Taste the Difference!</div><div class="kmb-widget-btn-group kmb-widget-btn-group-center flex justify-center"><!----><!----></div></div></div></div></div></div></div></div></div></div></div><div aria-hidden="true" class="kmb-site-slider-item kmb-slider-item" style="width:100%;"><div class="kmb-widget-bg-image-item kmb-full-bg-item kmb-widget-item-content kmb-widget-hidden-bg-image kmb-widget-bg-image-with-overlay w-full"><div class="kmb-widget-bg-image-content"><div data-height="750" class="kmb-widget-bg-image" style="background-image:url(/_ipx/f_webp,q_90/https://img2.hocoos.com/cache/img-pack/668/w-1900/h-750/ww-1900/wh-750/img-pack/668/pexels-rachel-claire-8112981.jpg);min-height:750px;"><div class="kmb-widget-overlay"><div class="kmb-widget-overlay-content flex m-auto py-32 items-center items-center"><div class="kmb-cards-background-v2 kmb-lg-widget-container kmb-widget-lg-divider"><div class="w-full kmb-slide-content kmb-text-center z-10 lg-p-32 md-p-16 p-4 kmb-widget-info-left"><div class="kmb-widget-default-info"><div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="kmb-widget-aligment-wrap kmb-widget-titles-info"><h1 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-title-align-default kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider kmb-slider-title"><p class=\"kmb-rich-text-paragraph text-selected \">Taste the difference</p></h1><div data-max-chars="1200" class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-slider-description">Indulge in the finest and freshest seafood experience. Our delightful selections are sure to leave you craving more! Every dish is carefully crafted with passion and precision, providing a flavor that will tantalize your taste buds. Come enjoy our exceptional flavors today - Taste the Difference!</div><div class="kmb-widget-btn-group kmb-widget-btn-group-center flex justify-center"><!----><!----></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="kmb-site-slider-navigation slider-navigation flex items-center kmb-site-arrow-slider-navigation arrow-slider-navigation"><button aria-label="prev" class="kmb-slide-prev-btn slider-navigation-btn kmb-widget-slider-nav-default"></button><button aria-label="next" class="kmb-slide-next-btn slider-navigation-btn kmb-widget-slider-nav-default"></button></div><div class="kmb-site-slider-pagination slider-navigation flex items-center kmb-site-slider-indicators kmb-site-slider-dots-indicators slider-indicators"><div class="kmb-site-slider-indicators-wrapper slider-indicators-wrapper"><button aria-label="01" class="kmb-site-slider-indicator slider-indicator mx-2 active"></button><button aria-label="02" class="kmb-site-slider-indicator slider-indicator mx-2"></button><button aria-label="03" class="kmb-site-slider-indicator slider-indicator mx-2"></button></div></div></div></div></div></div></div><div id="FeaturedItemsSettingsT2V11_2666571482401" data-widget-key="2666571482401" class="kmb-page-widget featured-items featured-items-t2 featured-items-t2-v11" style="padding-top:38px;padding-bottom:38px;"><div class="kmb-widget-container"><div class="kmb-widget-content-info kmb-featured-items-content"><div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="kmb-widget-aligment-wrap kmb-widget-titles-info text-center"><h3 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-sub-title">Featured items</h3><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-title-align-default kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider">Everyone’s favourite</h2></div><div class="kmb-tabs kmb-site-tabs"><div class="kmb-item-tab kmb-site-item-tab item-tab-0"><div role="tabpanel" data-fetch-key="Tab:0" class="kmb-tabpanel kmb-site-tabpanel"><div class="kmb-featured-items-row kmb-widget-row"><div class="lg-w-1-2 w-full kmb-widget-col"><div class="kmb-widget-row"><div class="md-w-1-2 w-full kmb-widget-col kmb-md-widget-col-group"><div data-aos="fade-up" data-feature-item-ui-type="2" data-fetch-key="FeaturedItem:0" class="kmb-featured-item kmb-widget-item kmb-featured-item-hover-content kmb-item-hover-content featured-items-no-radius kmb-featured-item-center"><div class="kmb-featured-item-image kmb-widget-item-image"><div data-width="255" class="kmb-widget-image kmb-widget-full-image kmb-centered-item"><img src="/_ipx/f_webp,q_50,s_255x540/https://img2.hocoos.com/cache/img-pack/668/w-255/h-540/ww-255/wh-540/img-pack/668/pexels-rachel-claire-8112420.jpg" width="255" height="540" alt="Ocean Delights Seafood " loading="lazy" data-width="255" data-height="540" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:255px;max-height:540px;"></div></div><div class="kmb-widget-item-content kmb-featured-item-content py-6"><div class="kmb-widget-item-row"><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-simply-title kmb-widget-item-title kmb-featured-item-name kmb-widget-text-body1 mb-8"><p class=\"kmb-rich-text-paragraph text-selected \">Featured Item 1</p></h2><div class="kmb-featured-item-price-col text-left"><div class="kmb-item-group-price kmb-site-default-dir kmb-featured-item-price"><div class="kmb-widget-price kmb-item-price kmb-site-default-dir kmb-item-price-col rtl-ml-2 kmb-widget-text-caption1"><span class="kmb-site-price-amount kmb-widget-price-amount kmb-item-price-amount">100</span><span class="kmb-widget-price-currency kmb-item-currency ml-1">USD</span></div></div></div></div></div></div></div><div class="md-w-1-2 w-full kmb-widget-col"><div class="kmb-widget-col-group"><div data-aos="fade-up" data-feature-item-ui-type="2" data-fetch-key="FeaturedItem:1" class="kmb-featured-item kmb-widget-item kmb-featured-item-hover-content kmb-item-hover-content featured-items-no-radius kmb-featured-item-center"><div class="kmb-featured-item-image kmb-widget-item-image"><div data-width="255" class="kmb-widget-image kmb-widget-full-image kmb-centered-item"><img src="/_ipx/f_webp,q_50,s_255x255/https://img2.hocoos.com/cache/img-pack/668/w-255/h-255/ww-255/wh-255/img-pack/668/pexels-rachel-claire-8112424.jpg" width="255" height="255" alt="Ocean Delights Seafood " loading="lazy" data-width="255" data-height="255" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:255px;max-height:255px;"></div></div><div class="kmb-widget-item-content kmb-featured-item-content py-6"><div class="kmb-widget-item-row"><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-simply-title kmb-widget-item-title kmb-featured-item-name kmb-widget-text-body1 mb-8"><p class=\"kmb-rich-text-paragraph text-selected \">Featured Item 2</p></h2><div class="kmb-featured-item-price-col text-left"><div class="kmb-item-group-price kmb-site-default-dir kmb-featured-item-price"><div class="kmb-widget-price kmb-item-price kmb-site-default-dir kmb-item-price-col rtl-ml-2 kmb-widget-text-caption1"><span class="kmb-site-price-amount kmb-widget-price-amount kmb-item-price-amount">100</span><span class="kmb-widget-price-currency kmb-item-currency ml-1">USD</span></div></div></div></div></div></div></div><div class="kmb-widget-col-group"><div data-aos="fade-up" data-feature-item-ui-type="2" data-fetch-key="FeaturedItem:2" class="kmb-featured-item kmb-widget-item kmb-featured-item-hover-content kmb-item-hover-content featured-items-no-radius kmb-featured-item-center"><div class="kmb-featured-item-image kmb-widget-item-image"><div data-width="255" class="kmb-widget-image kmb-widget-full-image kmb-centered-item"><img src="/_ipx/f_webp,q_50,s_255x255/https://img2.hocoos.com/cache/img-pack/668/w-255/h-255/ww-255/wh-255/img-pack/668/pexels-rachel-claire-4857694.jpg" width="255" height="255" alt="Ocean Delights Seafood " loading="lazy" data-width="255" data-height="255" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:255px;max-height:255px;"></div></div><div class="kmb-widget-item-content kmb-featured-item-content py-6"><div class="kmb-widget-item-row"><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-simply-title kmb-widget-item-title kmb-featured-item-name kmb-widget-text-body1 mb-8"><p class=\"kmb-rich-text-paragraph text-selected \">Featured Item 3</p></h2><div class="kmb-featured-item-price-col text-left"><div class="kmb-item-group-price kmb-site-default-dir kmb-featured-item-price"><div class="kmb-widget-price kmb-item-price kmb-site-default-dir kmb-item-price-col rtl-ml-2 kmb-widget-text-caption1"><span class="kmb-site-price-amount kmb-widget-price-amount kmb-item-price-amount">100</span><span class="kmb-widget-price-currency kmb-item-currency ml-1">USD</span></div></div></div></div></div></div></div></div></div></div><div class="lg-w-1-2 w-full kmb-widget-col"><div data-aos="fade-up" data-feature-item-ui-type="2" data-fetch-key="FeaturedItem:3" class="kmb-featured-item kmb-widget-item kmb-featured-item-hover-content kmb-item-hover-content featured-items-no-radius kmb-featured-item-center"><div class="kmb-featured-item-image kmb-widget-item-image"><div data-width="540" class="kmb-widget-image kmb-widget-full-image kmb-centered-item"><img src="/_ipx/f_webp,q_50,s_540x540/https://img2.hocoos.com/cache/img-pack/668/w-540/h-540/ww-540/wh-540/img-pack/668/pexels-rachel-claire-8112402.jpg" width="540" height="540" alt="Ocean Delights Seafood " loading="lazy" data-width="540" data-height="540" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:540px;max-height:540px;"></div></div><div class="kmb-widget-item-content kmb-featured-item-content py-6"><div class="kmb-widget-item-row"><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-simply-title kmb-widget-item-title kmb-featured-item-name kmb-widget-text-body1 mb-8"><p class=\"kmb-rich-text-paragraph text-selected \">Featured Item 4</p></h2><div class="kmb-featured-item-price-col text-left"><div class="kmb-item-group-price kmb-site-default-dir kmb-featured-item-price"><div class="kmb-widget-price kmb-item-price kmb-site-default-dir kmb-item-price-col rtl-ml-2 kmb-widget-text-caption1"><span class="kmb-site-price-amount kmb-widget-price-amount kmb-item-price-amount">100</span><span class="kmb-widget-price-currency kmb-item-currency ml-1">USD</span></div></div></div></div></div></div></div></div></div></div></div><div data-aos="fade-up" class="kmb-widget-btn-group kmb-widget-btn-group-center kmb-widget-btn-group-mt"><a href="/d/AboutUs" class="kmb-widget-btn kmb-widget-primary-btn"><span class="kmb-widget-btn-label">View more</span></a></div></div></div></div><div id="BookingSettingsT5V1_16979423369461" data-widget-key="16979423369461" class="kmb-page-widget kmb-widget-booking booking-t5 booking-t5-v1" style="padding-top:38px;padding-bottom:38px;"><div class="kmb-xl-widget-container"><div class="kmb-widget-content-info booking-content"><div class="kmb-widget-content kmb-widget-content-container"><div class="kmb-widget-row"><div class="lg-w-2-5 w-full kmb-widget-col mb-6 lg-mb-0"><div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="kmb-widget-aligment-wrap kmb-widget-titles-info kmb-widget-booking-col-content lg-px-12"><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-title-align-default kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider">Book online now</h2><div data-max-chars="1200" class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-widget-description">Request a new appointment</div></div></div><div class="lg-w-1-5 w-full kmb-widget-col mb-6 lg-mb-0"><div class="kmb-widget-booking-col-content"><div data-aos="fade-up" class="kmb-contact-informations kmb-widget-booking-contacts"><div class="kmb-contact-informations-list"><div class="kmb-contact-information-item"><div class="kmb-widget-contacts-info text-left"><p class="kmb-widget-contact-label kmb-display-name-label kmb-widget-el-group font-semibold kmb-widget-sub-title">Email</p><ul class="kmb-widget-contacts-list"><li class="kmb-widget-contact-item kmb-widget-md-el-group"><a href="/cdn-cgi/l/email-protection#9ffaf2fef6f3dff7f0fcf0f0ecb1fcf0f2" class="kmb-widget-contact-item-value kmb-widget-text-body2"><span class="cf_email" data-cfemail="056068646c69456d6a666a6a762b666a68">[email&#160;protected]</span></a></li></ul></div></div><div class="kmb-contact-information-item"><div class="kmb-widget-contacts-info text-left"><p class="kmb-widget-contact-label kmb-display-name-label kmb-widget-el-group font-semibold kmb-widget-sub-title">Phone</p><ul class="kmb-widget-contacts-list"><li class="kmb-widget-contact-item kmb-widget-md-el-group"><a href="tel:+1 234 567 8900" class="kmb-widget-contact-item-value kmb-widget-text-body2">+1 234 567 8900</a></li></ul></div></div><div class="kmb-contact-information-item"><div class="kmb-widget-contacts-info text-left"><p class="kmb-widget-contact-label kmb-display-name-label kmb-widget-el-group font-semibold kmb-widget-sub-title">Address</p><ul class="kmb-widget-contacts-list"><li class="kmb-widget-contact-item kmb-widget-md-el-group"><span class="kmb-widget-contact-item-value kmb-widget-text-body2">18 Grin, Emberouz WA Moharram Beik, Moharam Bek, Egypt</span></li></ul></div></div></div></div></div></div><div class="lg-w-2-5 w-full kmb-widget-col mb-6 lg-mb-0"><div class="kmb-widget-booking-col-content lg-px-12"><div class="kmb-widget-booking-form-wrap"><div class="kmb-widget-booking-contact-form kmb-widget-form-border-bottom-fields kmb-widget-contact-form-left-btn-group"><form class="kmb-widget-form kmb-widget-booking-form kmb-widget-contact-form"><div class="kmb-widget-row"><div class="kmb-widget-col kmb-widget-form-group w-full"><div class="kmb-site-default-group kmb-default-group kmb-widget-form-group"><div class="kmb-widget-field kmb-site-field-group kmb-site-dropdown-group"><div class="kmb-site-component kmb-site-select kmb-select kmb-site-field-group kmb-field-group kmb-site-form-select required"><select class="hidden"><template></template></select><div class="kmb-site-select-container kmb-select-container"><button type="button" class="kmb-select-toggle"><span class="placeholder">Location*</span><span class="kmb-caret"><i class="kmb-site-icon-angle-down"></i></span></button></div></div></div></div></div><div class="kmb-widget-col kmb-widget-form-group w-full"><div class="kmb-site-default-group kmb-default-group kmb-widget-form-group"><div class="kmb-widget-field kmb-site-field-group kmb-site-dropdown-group"><div class="kmb-site-component kmb-site-select kmb-select kmb-site-field-group kmb-field-group kmb-site-form-select required"><select class="hidden"><template></template></select><div class="kmb-site-select-container kmb-select-container"><button type="button" class="kmb-select-toggle"><span class="placeholder">Service*</span><span class="kmb-caret"><i class="kmb-site-icon-angle-down"></i></span></button></div></div></div></div></div><div class="kmb-widget-col kmb-widget-form-group w-full"><div class="kmb-site-default-group kmb-default-group kmb-widget-form-group"><div class="kmb-widget-field kmb-site-field-group kmb-site-dropdown-group"><div class="kmb-site-component kmb-site-select kmb-select kmb-site-field-group kmb-field-group kmb-site-form-select required"><select class="hidden"><template></template></select><div class="kmb-site-select-container kmb-select-container"><button type="button" class="kmb-select-toggle"><span class="placeholder">Staff member*</span><span class="kmb-caret"><i class="kmb-site-icon-angle-down"></i></span></button></div></div></div></div></div><div class="kmb-widget-col kmb-widget-form-group w-2-3"><div class="kmb-site-default-group kmb-default-group kmb-widget-form-group"><div class="kmb-widget-field kmb-site-field-group kmb-site-date-group"><div class="kmb-widget-date-field kmb-widget-date-field-has-custom-icon"><!----></div></div></div></div><div class="kmb-widget-col kmb-widget-form-group w-1-3"><div class="kmb-site-default-group kmb-default-group kmb-widget-form-group"><div class="kmb-widget-field kmb-site-field-group kmb-site-time-group"><div class="kmb-widget-date-field kmb-widget-data-time-field kmb-widget-date-field-has-custom-icon"><!----></div></div></div></div><div class="kmb-widget-col kmb-widget-form-group w-1-2"><div class="kmb-site-default-group kmb-default-group kmb-widget-form-group"><div class="kmb-widget-field kmb-site-field-group kmb-site-input-group"><input type="text" name="kmb_site_input_12855227707131" placeholder="First Name*" class="kmb-site-form-control input-field required"></div></div></div><div class="kmb-widget-col kmb-widget-form-group w-1-2"><div class="kmb-site-default-group kmb-default-group kmb-widget-form-group"><div class="kmb-widget-field kmb-site-field-group kmb-site-input-group"><input type="text" name="kmb_site_input_11122263944201" placeholder="Last Name*" class="kmb-site-form-control input-field required"></div></div></div><div class="kmb-widget-col kmb-widget-form-group w-full"><div class="kmb-site-default-group kmb-default-group kmb-widget-form-group"><div class="kmb-widget-field kmb-site-field-group kmb-site-input-group"><input type="text" name="kmb_site_input_4483354158931" placeholder="Email address*" class="kmb-site-form-control input-field required"></div></div></div></div><div class="kmb-widget-btn-group kmb-widget-btn-group-center"><button type="submit" aria-label="button" class="kmb-widget-btn kmb-widget-primary-btn kmb-submit-form-btn"><span class="kmb-widget-btn-label">Book</span></button></div></form><!----></div></div></div></div></div></div></div></div></div><div id="BannerSettingsT5V1_1351355407701" data-widget-key="1351355407701" class="kmb-page-widget banner banner-t5 banner-t5-v1 kmb-widget-bg" style="padding-top:38px;padding-bottom:38px;"><div class="kmb-widget-container"><div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="kmb-widget-aligment-wrap kmb-widget-content-info kmb-text-center"><div class="flex flex-col justify-center"><h3 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-sub-title"><p class="kmb-live-tag-label kmb-rich-text-paragraph text-selected ">Simply Better, Every Day</p></h3><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-title-align-default kmb-widget-title kmb-widget-title-h1 kmb-widget-title-no-divider kmb-banner-title"><p class=\"kmb-rich-text-paragraph text-selected \">Food infused with love</p></h2><div class="kmb-widget-btn-group kmb-widget-btn-group-center"><a href="/d/AboutUs" class="kmb-widget-btn kmb-widget-primary-btn"><span class="kmb-widget-btn-label">Learn More</span></a></div></div></div></div></div><div id="SmartBannerSettingsT8V1_8739653832601" data-widget-key="8739653832601" class="kmb-page-widget smart-banner smart-banner-t8 smart-banner-t8-v1" style="padding-top:0px;padding-bottom:0px;"><div class="kmb-widget-container-fluid"><div class="kmb-smart-banner-content md-py-10 py-5"><div class="kmb-widget-row items-center justify-center"><div class="kmb-widget-col md-w-1-2-2 w-full"><div class="kmb-sm-widget-container"><h3 data-max-chars="60" data-aos="fade-up" class="kmb-widget-rich-text kmb-simply-title kmb-widget-title-h2 kmb-smart-banner-title kmb-widget-title-no-divider text-center">Coming soon</h3><div data-aos="fade-up" class="kmb-widget-countdown kmb-smart-banner-countdown-revert kmb-live-editor-widget-field-wrap-content-full-width flex md-mb-0 mb-3"><div class="kmb-site-countdown-wrap"><div class="kmb-site-widget-coutdown"><div class="kmb-site-widgte-coutdown smart-banner-date flex flex-row text-center mx-auto"><div class="date-block date-days"><p class="date-number kmb-widget-title-h1">00</p><p class="date-name kmb-widget-text-body2">Days</p></div><div class="kmb-widget-title-no-divider date-number-separator kmb-widget-title-no-divider md-mx-2 mx-1 kmb-widget-title-h1">:</div><div class="date-block date-hours"><p class="date-number kmb-widget-title-h1">00</p><p class="date-name kmb-widget-text-body2">Hours</p></div><div class="kmb-widget-title-no-divider date-number-separator kmb-widget-title-no-divider md-mx-2 mx-1 kmb-widget-title-h1">:</div><div class="date-block date-min"><p class="date-number kmb-widget-title-h1">00</p><p class="date-name kmb-widget-text-body2">Minutes</p></div><div class="kmb-widget-title-no-divider date-number-separator kmb-widget-title-no-divider md-mx-2 mx-1 kmb-widget-title-h1">:</div><div class="date-block date-sec"><p class="date-number kmb-widget-title-h1">00</p><p class="date-name kmb-widget-text-body2">Seconds</p></div></div></div></div></div></div></div><div class="kmb-widget-col md-w-1-2-1 w-full"><div data-width="838" class="kmb-widget-image kmb-widget-image-item-default-rounded-left"><img src="/_ipx/f_webp,q_50,s_838x438/https://img2.hocoos.com/cache/img-pack/668/w-838/h-438/ww-838/wh-438/img-pack/668/pexels-rachel-claire-8112977.jpg" width="838" height="438" alt="Ocean Delights Seafood " loading="lazy" data-width="838" data-height="438" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:838px;max-height:438px;"></div></div></div></div></div></div><div id="GallerySettingsT6V4_17101504932011" data-widget-key="17101504932011" class="kmb-page-widget gallery gallery-t6 gallery-t6-v4" style="padding-top:38px;padding-bottom:38px;"><div class="kmb-widget-container-fluid kmb-widget-container-fluid-frame"><div class="kmb-widget-content-info kmb-gallery-content"><div class="kmb-widget-content py-10"><div class="kmb-md-widget-container"><div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="kmb-widget-aligment-wrap kmb-widget-titles-info text-center"><!----><!----></div></div><div class="kmb-widget-row kmb-widget-col-group"><div class="kmb-widget-gallery-custom-col kmb-widget-col md-w-1-3 w-full kmb-widget-col-group"><div data-aos="fade-up" data-width="620" class="kmb-widget-image kmb-single-gallery-item kmb-gallery-items-image-full"><img src="/_ipx/f_webp,q_50,s_620x1325/https://img2.hocoos.com/cache/img-pack/668/w-620/h-1325/ww-620/wh-1325/img-pack/668/pexels-rachel-claire-8112941.jpg" width="620" height="1325" alt="Ocean Delights Seafood " loading="lazy" data-width="620" data-height="1325" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:620px;max-height:1325px;"></div></div><div class="kmb-widget-gallery-custom-col kmb-widget-col md-w-2-3 w-full"><div class="kmb-widget-row"><div class="sm-w-1-2 w-full kmb-widget-col kmb-widget-col-group"><div data-aos="fade-up" data-width="520" class="kmb-widget-image kmb-single-gallery-item kmb-gallery-items-image-full"><img src="/_ipx/f_webp,q_50,s_520x675/https://img2.hocoos.com/cache/img-pack/668/w-520/h-675/ww-520/wh-675/img-pack/668/pexels-rachel-claire-8112935.jpg" width="520" height="675" alt="Ocean Delights Seafood " loading="lazy" data-width="520" data-height="675" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:520px;max-height:675px;"></div></div><div class="sm-w-1-2 w-full kmb-widget-col kmb-widget-col-group"><div data-aos="fade-up" data-width="520" class="kmb-widget-image kmb-single-gallery-item kmb-gallery-items-image-full"><img src="/_ipx/f_webp,q_50,s_520x675/https://img2.hocoos.com/cache/img-pack/668/w-520/h-675/ww-520/wh-675/img-pack/668/pexels-rachel-claire-8112895.jpg" width="520" height="675" alt="Ocean Delights Seafood " loading="lazy" data-width="520" data-height="675" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:520px;max-height:675px;"></div></div></div><div class="w-full"><div data-aos="fade-up" data-width="1070" class="kmb-widget-image kmb-single-gallery-item kmb-gallery-items-image-full"><img src="/_ipx/f_webp,q_50,s_1070x620/https://img2.hocoos.com/cache/img-pack/668/w-1070/h-620/ww-1070/wh-620/img-pack/668/pexels-rachel-claire-8112952.jpg" width="1070" height="620" alt="Ocean Delights Seafood " loading="lazy" data-width="1070" data-height="620" class="kmb-widget-image-item  kmb-widget-type-image" style="max-width:1070px;max-height:620px;"></div></div></div></div><!----></div></div></div></div><div id="ContactUsSettingsT7V1_12932208811481" data-widget-key="12932208811481" class="kmb-page-widget contacts  contacts-t7 contacts-t7-v1" style="padding-top:0px;padding-bottom:0px;"><div class="kmb-widget-container-fluid"><div class="flex flex-row flex-wrap"><div class="lg-w-1-2 w-full w-item-0"><div class="flex justify-center items-center break-words"><div data-aos="fade-up" class="kmb-widget-contact-us-wrap text-center kmb-widget-titles-info"><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-title-align-default kmb-widget-title kmb-widget-title-h1">Address</h2><div data-max-chars="1200" class="kmb-widget-rich-text kmb-widget-description kmb-widget-text-body2 kmb-widget-description">We’re excited to meet you! Feel free to get in touch with us within these working hours.</div><div class="contact-information"><div class="kmb-contact-informations item-full-width"><div class="kmb-contact-informations-list"><div class="kmb-contact-information-item"><div class="kmb-widget-contacts-info text-left"><p class="kmb-widget-contact-label kmb-display-name-label kmb-widget-el-group font-semibold kmb-widget-sub-title">Email</p><ul class="kmb-widget-contacts-list"><li class="kmb-widget-contact-item kmb-widget-md-el-group"><a href="/cdn-cgi/l/email-protection#c1a4aca0a8ad81a9aea2aeaeb2efa2aeac" class="kmb-widget-contact-item-value kmb-widget-text-body2"><span class="cf_email" data-cfemail="70151d11191c30181f131f1f035e131f1d">[email&#160;protected]</span></a></li></ul></div></div><div class="kmb-contact-information-item"><div class="kmb-widget-contacts-info text-left"><p class="kmb-widget-contact-label kmb-display-name-label kmb-widget-el-group font-semibold kmb-widget-sub-title">Phone</p><ul class="kmb-widget-contacts-list"><li class="kmb-widget-contact-item kmb-widget-md-el-group"><a href="tel:+1 234 567 8900" class="kmb-widget-contact-item-value kmb-widget-text-body2">+1 234 567 8900</a></li></ul></div></div><div class="kmb-contact-information-item"><div class="kmb-widget-contacts-info text-left"><p class="kmb-widget-contact-label kmb-display-name-label kmb-widget-el-group font-semibold kmb-widget-sub-title">Address</p><ul class="kmb-widget-contacts-list"><li class="kmb-widget-contact-item kmb-widget-md-el-group"><span class="kmb-widget-contact-item-value kmb-widget-text-body2">18 Grin, Emberouz WA Moharram Beik, Moharam Bek, Egypt</span></li></ul></div></div></div></div></div></div></div></div><div class="kmb-mini-banner-bg lg-w-1-2 w-full"><div class="flex items-center justify-center break-words"><div data-aos="fade-up" class="kmb-widget-contact-us-wrap text-center kmb-widget-titles-info"><h2 data-max-chars="70" class="kmb-widget-rich-text kmb-widget-title-align-default kmb-widget-title kmb-widget-title-h1"><p class=\"kmb-rich-text-paragraph text-selected \">Working hours</p></h2><div class="flex justify-center text-left"><ul class="kmb-widget-opening-hours kmb-widget-opening-hours-full-day-name"><li class="kmb-widget-opening-hours-item kmb-widget-row items-center widget-opening-hour-item mb-3"><span class="kmb-day-label flex-1 kmb-widget-col"><span class="kmb-day-label-name kmb-widget-sub-title">Sunday</span></span><span class="kmb-opening-hours w-full md-w-auto kmb-widget-col"><span class="kmb-opening-hours-value kmb-widget-text-body3 whitespace-nowrap"><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">09</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">00</span><span class="kmb-opening-hours-time-format"> am</span></span><span class="kmb-opening-hours-separator"> - </span><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">07</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">30</span><span class="kmb-opening-hours-time-format"> pm</span></span></span></span></li><li class="kmb-widget-opening-hours-item kmb-widget-row items-center widget-opening-hour-item mb-3"><span class="kmb-day-label flex-1 kmb-widget-col"><span class="kmb-day-label-name kmb-widget-sub-title">Monday</span></span><span class="kmb-opening-hours w-full md-w-auto kmb-widget-col"><span class="kmb-opening-hours-value kmb-widget-text-body3 whitespace-nowrap"><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">09</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">00</span><span class="kmb-opening-hours-time-format"> am</span></span><span class="kmb-opening-hours-separator"> - </span><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">07</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">30</span><span class="kmb-opening-hours-time-format"> pm</span></span></span></span></li><li class="kmb-widget-opening-hours-item kmb-widget-row items-center widget-opening-hour-item mb-3"><span class="kmb-day-label flex-1 kmb-widget-col"><span class="kmb-day-label-name kmb-widget-sub-title">Tuesday</span></span><span class="kmb-opening-hours w-full md-w-auto kmb-widget-col"><span class="kmb-opening-hours-value kmb-widget-text-body3 whitespace-nowrap"><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">09</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">00</span><span class="kmb-opening-hours-time-format"> am</span></span><span class="kmb-opening-hours-separator"> - </span><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">07</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">30</span><span class="kmb-opening-hours-time-format"> pm</span></span></span></span></li><li class="kmb-widget-opening-hours-item kmb-widget-row items-center widget-opening-hour-item mb-3"><span class="kmb-day-label flex-1 kmb-widget-col"><span class="kmb-day-label-name kmb-widget-sub-title">Wednesday</span></span><span class="kmb-opening-hours w-full md-w-auto kmb-widget-col"><span class="kmb-opening-hours-value kmb-widget-text-body3 whitespace-nowrap"><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">09</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">00</span><span class="kmb-opening-hours-time-format"> am</span></span><span class="kmb-opening-hours-separator"> - </span><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">07</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">30</span><span class="kmb-opening-hours-time-format"> pm</span></span></span></span></li><li class="kmb-widget-opening-hours-item kmb-widget-row items-center widget-opening-hour-item mb-3"><span class="kmb-day-label flex-1 kmb-widget-col"><span class="kmb-day-label-name kmb-widget-sub-title">Thursday</span></span><span class="kmb-opening-hours w-full md-w-auto kmb-widget-col"><span class="kmb-opening-hours-value kmb-widget-text-body3 whitespace-nowrap"><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">09</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">00</span><span class="kmb-opening-hours-time-format"> am</span></span><span class="kmb-opening-hours-separator"> - </span><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">07</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">30</span><span class="kmb-opening-hours-time-format"> pm</span></span></span></span></li><li class="kmb-widget-opening-hours-item kmb-widget-row items-center widget-opening-hour-item mb-3"><span class="kmb-day-label flex-1 kmb-widget-col"><span class="kmb-day-label-name kmb-widget-sub-title">Friday</span></span><span class="kmb-opening-hours w-full md-w-auto kmb-widget-col"><span class="kmb-opening-hours-value kmb-widget-text-body3 whitespace-nowrap"><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">09</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">00</span><span class="kmb-opening-hours-time-format"> am</span></span><span class="kmb-opening-hours-separator"> - </span><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">07</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">30</span><span class="kmb-opening-hours-time-format"> pm</span></span></span></span></li><li class="kmb-widget-opening-hours-item kmb-widget-row items-center widget-opening-hour-item mb-3"><span class="kmb-day-label flex-1 kmb-widget-col"><span class="kmb-day-label-name kmb-widget-sub-title">Saturday</span></span><span class="kmb-opening-hours w-full md-w-auto kmb-widget-col"><span class="kmb-opening-hours-value kmb-widget-text-body3 whitespace-nowrap"><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">09</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">00</span><span class="kmb-opening-hours-time-format"> am</span></span><span class="kmb-opening-hours-separator"> - </span><span class="kmb-opening-hours-time-value"><span class="kmb-opening-hours-time-hour-value">07</span><span class="kmb-opening-hours-time-separetor"> : </span><span class="kmb-opening-hours-time-minute-value">30</span><span class="kmb-opening-hours-time-format"> pm</span></span></span></span></li></ul></div></div></div></div></div></div></div></div></div><footer class="kmb-site-footer relative kmb-footer-category-type-1 kmb-footer-variation-type-2"><div class="kmb-site-footer-content kmb-site-widget"><div class="kmb-widget-container"><div class="kmb-widget-row kmb-footer-widget-row justify-between"><div class="lg-w-1-3 md-w-1-3 sm-w-1-2 w-full kmb-widget-col kmb-footer-column kmb-footer-logo-column center"><div class="kmb-footer-logo footer-logo"><a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active kmb-logo-link kmb-logo-type-2 kmb-footer-logo-link"><span class="kmb-site-logo-txt kmb-site-default-text">Logo</span></a></div></div><div class="kmb-footer-bottom w-full left"><span data-max-chars="120" class="kmb-widget-rich-text footer-copyright kmb-widget-text-caption3">Created with target ="_blank" > AI Website Builder</a></span></div></div></div></div></footer><!----></div></div></div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>window.NUXT=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,,$,aa,ab,ac,ad,ae,af,ag,ah,ai,aj,ak,al,am,an,ao,ap,aq,ar,as,at,au,av,aw,ax,ay,az,aA,aB,aC,aD,aE,aF,aG,aH,aI,aJ,aK,aL,aM,aN,aO,aP,aQ,aR,aS){ak.suspendDate="2024-04-14T14:54:43.9750710+00:00";ak.isDeleted=c;ak.id=F;ak.title=V;ak.userAuthId=al;ak.subscriptionPlan=a;ak.homePageSettings={pageTemplateType:a};ak.layoutType=a;ak.menuType=a;ak.alignMenuType=a;ak.menuItems=[{key:2201745109551477200,name:{lczKey:I,lczValue:I,recordId:F,type:J,origin:I,column:K,isUserChange:c},pageId:am,pageSlug:an,linkType:a,linkPageType:a,pageType:a,isEnabled:b,isTargetBlank:c},{key:5457789228787929000,name:{lczKey:"AboutUs",lczValue:ao,recordId:F,type:J,origin:ao,column:K,isUserChange:c},pageId:1311225,pageSlug:"about-us",linkType:a,linkPageType:a,pageType:d,isEnabled:b,isTargetBlank:c},{key:1241527660900336000,name:{lczKey:"ContactUs",lczValue:ap,recordId:F,type:J,origin:ap,column:K,isUserChange:c},pageId:1311226,pageSlug:"contact-us",linkType:a,linkPageType:a,pageType:t,isEnabled:b,isTargetBlank:c},{key:6242535976578714000,name:{lczKey:W,lczValue:W,recordId:F,type:J,origin:W,column:K,isUserChange:c},pageId:1311227,pageSlug:"booking",linkType:a,linkPageType:a,pageType:aq,isEnabled:b,isTargetBlank:c},{key:8230497807404685000,name:{lczKey:X,lczValue:X,recordId:F,type:J,origin:X,column:K,isUserChange:c},pageId:1311228,pageSlug:"menu",linkType:a,linkPageType:a,pageType:26,isEnabled:b,isTargetBlank:c},{key:14070898356561,name:{lczKey:"cltrcq3hl06ro3j6go4oc1ko1",lczValue:"Blog"},pageId:89579,pageSlug:"blog",linkType:a,linkPageType:p,pageType:18,isEnabled:b,isTargetBlank:c,children:[]}];ak.headerSettings={enabledSettings:{"1":{displayLabel:b,isEnabled:b},"2":{displayLabel:b,isEnabled:b},"3":{displayLabel:b,isEnabled:b},"4":{displayLabel:b,isEnabled:b},"5":{displayLabel:b,isEnabled:b},"6":{displayLabel:b,isEnabled:b},"7":{displayLabel:b,isEnabled:b}},shoppingCartType:a,structureType:a,menuAlignType:a,menuAnimationType:a,phones:[{isLabelEnabled:c,label:{lczKey:"cltrbz4fm003g3j6gmdyd3n3i"},description:{lczKey:"cltrbz4fm003h3j6g51ikdb0l",lczValue:V}}],emails:[{isLabelEnabled:c,label:{lczKey:"cltrbz4fm003i3j6gmyxryld5"},description:{lczKey:"cltrbz4fm003j3j6gxk2shd28",lczValue:V}}],socialNetworks:[],locations:[{address:L,isLabelEnabled:b,latLng:{lat:Y,lng:Z}}],search:{},contactsOrder:[d,g,M],button:{lczText:{lczKey:"lcz_2f770b7e-9148-494e-bd85-7c983fe4cd1f",lczValue:"Contact us"},type:a,labelType:a,urlType:g,contactType:a,elementType:g,page:{id:j,linkType:a},defaultLinkingPageType:a,popUp:j,isTargetBlank:c,isClosePopup:c,isEnabled:b,isEnabledIcon:c,style:{}},isSticky:c};ak.headerLogo={type:g,image:{type:a,imageUrl:ar},name:};ak.footerSettings={structureType:g,enabledSettings:{"1":{labelOverride:{lczKey:"lcz_c6324cb8-f006-4c66-a26d-c21d8fee59e9",lczValue:"Contact Info"},isEnabled:b},"2":{labelOverride:{lczKey:"lcz_e23f0baa-a898-4508-bea3-aac334259014",lczValue:"Social Networks"},isEnabled:b},"3":{labelOverride:{lczKey:"lcz_c84cf3ee-c24a-4e35-b445-43deadeb32c3",lczValue:as},isEnabled:b},"4":{labelOverride:{lczKey:"lcz_803b516c-e306-4024-a859-19cf1b781a43",lczValue:"Policies"},isEnabled:b},"5":{labelOverride:{lczKey:"lcz_196b0f02-6f6f-4920-a488-5942e180bb34",lczValue:"Links"},isEnabled:b},"6":{labelOverride:{lczKey:"lcz_7e06b466-77eb-4762-99b9-45f3d93a2d03",lczValue:"Opening hours"},isEnabled:b},"7":{labelOverride:{lczKey:"lcz_810a8c7c-5db7-43bd-9462-6ea424220bf7",lczValue:},isEnabled:b},"8":{labelOverride:{lczKey:"lcz_9d144fc0-cbfe-48b3-8eef-2bcea764591f",lczValue:"Copyright"},isEnabled:b},"9":{labelOverride:{lczKey:"lcz_6626d695-742f-4dc1-bd4f-b830bcdb5db7",lczValue:"Background Image"},isEnabled:b}},contacts:[{type:C,value:"email@email.com",isHiddenIcon:c},{type:g,value:L,isHiddenIcon:c}],socialNetworks:{"1":"https:\u002F\u002Ffacebook.com","2":"https:\u002F\u002Finstagram.com","3":"https:\u002F\u002Ftwitter.com","4":"https:\u002F\u002Fyoutube.com"},showUsernameInFooterSocialNetworks:c,newsletter:{mailingListId:252997,title:{lczKey:"lcz_79b511a9-bae1-4c76-a89e-1863ffb9094f",lczValue:as},buttonText:{lczKey:"lcz_096a6b3c-cbd0-4db7-ac30-55047c031e0b",lczValue:"Subscribe now"}},policies:[{key:21916216181,title:"Policy",type:d,isActive:b}],workingTime:{isAlwaysActive:c,isMergedSchedule:b,mon:{key:j,startHour:t,startMinute:j,startTimeFormat:u,endHour:p,endMinute:v,endTimeFormat:w,isOpened:b},tue:{key:a,startHour:t,startMinute:j,startTimeFormat:u,endHour:p,endMinute:v,endTimeFormat:w,isOpened:b},wed:{key:g,startHour:t,startMinute:j,startTimeFormat:u,endHour:p,endMinute:v,endTimeFormat:w,isOpened:b},thu:{key:d,startHour:t,startMinute:j,startTimeFormat:u,endHour:p,endMinute:v,endTimeFormat:w,isOpened:b},fri:{key:C,startHour:t,startMinute:j,startTimeFormat:u,endHour:p,endMinute:v,endTimeFormat:w,isOpened:b},sat:{key:M,startHour:t,startMinute:j,startTimeFormat:u,endHour:p,endMinute:v,endTimeFormat:w,isOpened:b},sun:{key:N,startHour:t,startMinute:j,startTimeFormat:u,endHour:p,endMinute:v,endTimeFormat:w,isOpened:b}},backroundImage:{type:a,isEnabled:b,imageUrl:"\u002Fimg-pack\u002F1\u002Fdefault-footer-bg.png"}};ak.footerMenuItems=[{key:a,name:{lczKey:"cltrbz4fm003l3j6gr7thhwc6",lczValue:I},linkType:a,linkPageType:a,pageType:j,isEnabled:b,isTargetBlank:c}];ak.footerLogo={type:g,image:{type:a,imageUrl:ar},name:};ak.footerCopyright="Created with\u003Ca href=\"https:\u002F\u002Fhocoos.com\u002F\" target =\"_blank\" \u003E AI Website Builder\u003C\u002Fa\u003E";ak.styles={bodyBg:at,bodyColor:q,bodyFontFamily:n,bodyFontSize:D,bodyFontWeight:O,bodyFontStyle:r,bodyLineHeight:x,bodyTextTransform:e,bodyTextLetterSpacing:e,primaryFont:P,secondaryFont:n,pageContainer:"1150px",primaryColor:h,secondaryColor:o,accentColor:E,mutedColor:q,fifthColor:f,sixthColor:f,seventhColor:at,whiteColor:h,blackColor:f,transparentColor:Q,primaryBorder:"1px solid #FFFFFF",secondaryBorder:"1px solid #5DAFFD",accentBorder:"1px solid #2272FF",borderRadius:$,headerBg:q,headerColor:h,headerHoverColor:f,headerActiveColor:f,headerFontFamily:n,headerFontSize:D,headerFontWeight:A,headerFontStyle:r,headerLineHeight:x,headerTextTransform:e,headerStickyBg:q,headerStickyOpacityPercentage:$,headerStickyBlur:$,footerBg:f,footerColor:q,footerFontFamily:n,footerFontSize:D,footerFontWeight:A,footerFontStyle:r,footerLineHeight:x,footerTextTransform:e,headlineH1Color:o,headlineH1FontFamily:P,headlineH1FontSize:"58px",headlineH1FontWeight:A,headlineH1FontStyle:au,headlineH1LineHeight:x,headlineH1TextTransform:e,headlineH1TextDecoration:e,headlineH1LineVisible:"block",headlineH1LineBg:h,headlineH2Color:o,headlineH2FontFamily:P,headlineH2FontSize:"40px",headlineH2FontWeight:A,headlineH2FontStyle:au,headlineH2LineHeight:x,headlineH2TextTransform:e,headlineH2TextDecoration:e,subTitleH3Color:E,subTitleH3FontFamily:n,subTitleH3FontSize:av,subTitleH3FontWeight:A,subTitleH3FontStyle:r,subTitleH3LineHeight:x,subTitleH3TextTransform:e,subTitleH3TextDecoration:e,subTitleH4Color:q,subTitleH4FontFamily:n,subTitleH4FontSize:av,subTitleH4FontWeight:R,subTitleH4FontStyle:r,subTitleH4LineHeight:x,subTitleH4TextTransform:e,subTitleH4TextDecoration:e,bodyText1Color:h,bodyText1FontFamily:n,bodyText1FontSize:S,bodyText1FontWeight:O,bodyText1FontStyle:r,bodyText1LineHeight:aa,bodyText1TextTransform:e,bodyText1TextDecoration:e,bodyText2Color:h,bodyText2FontFamily:n,bodyText2FontSize:S,bodyText2FontWeight:O,bodyText2FontStyle:r,bodyText2LineHeight:aa,bodyText2TextTransform:e,bodyText2TextDecoration:e,bodyText3Color:h,bodyText3FontFamily:n,bodyText3FontSize:D,bodyText3FontWeight:O,bodyText3FontStyle:r,bodyText3LineHeight:aa,bodyText3TextTransform:e,bodyText3TextDecoration:e,overline1Color:h,overline1FontFamily:n,overline1FontSize:D,overline1FontWeight:R,overline1FontStyle:r,overline1LineHeight:x,overline1TextTransform:e,overline1TextDecoration:e,overline2Color:f,overline2FontFamily:n,overline2FontSize:"14px",overline2FontWeight:R,overline2FontStyle:r,overline2LineHeight:x,overline2TextTransform:e,overline2TextDecoration:e,caption1Color:h,caption1FontFamily:n,caption1FontSize:S,caption1FontWeight:A,caption1FontStyle:r,caption1LineHeight:x,caption1TextTransform:e,caption1TextDecoration:e,caption2Color:h,caption2FontFamily:n,caption2FontSize:S,caption2FontWeight:A,caption2FontStyle:r,caption2LineHeight:x,caption2TextTransform:e,caption2TextDecoration:"line-through",caption3Color:h,caption3FontFamily:n,caption3FontSize:"12px",caption3FontWeight:A,caption3FontStyle:r,caption3LineHeight:x,caption3TextTransform:e,caption3TextDecoration:e,fieldLabelColor:E,fieldLabelFontFamily:n,fieldLabelFontSize:D,fieldLabelFontWeight:A,fieldLabelFontStyle:r,fieldLabelLineHeight:x,fieldLabelTextTransform:e,fieldLabelTextDecoration:e,inputFieldColor:E,inputFieldBg:h,inputFieldBorderColor:E,inputFieldFocusBorderColor:f,inputFieldFontFamily:n,inputFieldFontSize:D,inputFieldFontWeight:A,inputFieldFontStyle:r,inputFieldLineHeight:x,inputFieldTextTransform:e,inputFieldTextDecoration:e,btnFontFamily:n,btnFontSize:D,btnFontWeight:R,btnFontStyle:r,btnTextTransform:"uppercase",btnTextDecoration:e,btnBg:o,btnHoverBg:Q,btnColor:f,btnHoverColor:o,btnBorderColor:o,btnHoverBorderColor:o,btnBorderRadius:ab,btnBorderWidth:aw,btnBorderStyle:"solid",btnPrimaryBg:q,btnPrimaryHoverBg:h,btnPrimaryColor:f,btnPrimaryHoverColor:q,btnPrimaryBorderColor:q,btnPrimaryHoverBorderColor:h,btnPrimaryDisabledBg:o,btnPrimaryDisabledColor:f,btnSecondaryBg:Q,btnSecondaryHoverBg:o,btnSecondaryColor:o,btnSecondaryHoverColor:f,btnSecondaryBorderColor:o,btnSecondaryHoverBorderColor:o,btnLinkColor:o,btnLinkHoverColor:q,btnLinkTextDecoration:"underline",btnLinkLabelIcon:"\"e91f\"",imageBorderRadius:ab,gridItemBorderRadius:ab,accordionBg:f,accordionColor:h,accordionBorderColor:E,accordionHeadBg:f,accordionHeadColor:o,miniBannerBg:f,miniBannerBorderColor:E,cardsBg:f,cardsBorderColor:E,tabBg:h,tabColor:f,tabHoverBg:h,tabHoverColor:E,tabActiveBg:q,tabActiveColor:f,tabFontFamily:n,tabFontSize:D,tabFontWeight:A,tabActiveFontWeight:A,tabFontStyle:r,tabTextTransform:e,tabTextDecoration:e,overlayBg:"rgba(0,0,0, 0.5)",overlayColor:o,imageBackdropFilter:aw,sliderLeftNavIcon:"url('https:\u002F\u002Fimg2.hocoos.com\u002Fcache\u002Fimg-pack\u002F668\u002Fw-367\u002Fh-367\u002Fx-0\u002Fy-0\u002Fimg-pack\u002F668\u002Fleft-61-01.png')",sliderRightNavIcon:"url('https:\u002F\u002Fimg2.hocoos.com\u002Fcache\u002Fimg-pack\u002F668\u002Fw-367\u002Fh-367\u002Fx-0\u002Fy-0\u002Fimg-pack\u002F668\u002Fright-61-01.png')",sliderBottomLeftNavIcon:"url('https:\u002F\u002Fimg2.hocoos.com\u002Fcache\u002Fimg-pack\u002F668\u002Fw-367\u002Fh-367\u002Fx-0\u002Fy-0\u002Fimg-pack\u002F668\u002Fleft-27-01.png')",sliderBottomRightNavIcon:"url('https:\u002F\u002Fimg2.hocoos.com\u002Fcache\u002Fimg-pack\u002F668\u002Fw-367\u002Fh-367\u002Fx-0\u002Fy-0\u002Fimg-pack\u002F668\u002Fright-27-01.png')",widgetTintBackgroundColor:"#313131",storeBodyBg:h,storeBodyColor:f,storeBtnPrimaryBg:q,storeBtnPrimaryHoverBg:f,storeBtnPrimaryColor:h,storeBtnPrimaryHoverColor:h,storeBtnPrimaryBorderColor:q,storeBtnPrimaryHoverBorderColor:q,storeBtnPrimaryDisabledBg:o,storeBtnPrimaryDisabledColor:f,storeBtnSecondaryBg:Q,storeBtnSecondaryHoverBg:q,storeBtnSecondaryColor:f,storeBtnSecondaryHoverColor:h,storeBtnSecondaryBorderColor:f,storeBtnSecondaryHoverBorderColor:h,storeBtnSecondaryDisabledBg:o,storeBtnSecondaryDisabledColor:f,blogBodyBg:h,blogBodyColor:f,blogBtnPrimaryBg:f,blogBtnPrimaryHoverBg:f,blogBtnPrimaryColor:h,blogBtnPrimaryHoverColor:h,blogBtnPrimaryBorderColor:f,blogBtnPrimaryHoverBorderColor:f,blogBtnPrimaryDisabledBg:o,blogBtnPrimaryDisabledColor:q,blogBtnSecondaryBg:h,blogBtnSecondaryHoverBg:h,blogBtnSecondaryColor:f,blogBtnSeconda
